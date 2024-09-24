@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>{% block title %}My Site{% endblock %}</title>
+<html>
+<head>
 
-    </head>
-    <body>
-        <header>
-            <h1>{% block header %}{{title}}{% endblock %}</h1>
-        </header>
-    </body>
+    <title>{% block head_title %}SaaS{% endblock head_title %}</title>
+
+</head>
+<body>
+
+    {% block content %}
+replace me
+
+    {% endblock content %}
+
+</body>
+
 </html>
